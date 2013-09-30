@@ -24,6 +24,7 @@ to use this example you have to replace following fields in Config.cs file
 	
 	with subject-> Meetup Msg 
 	
+	to -> sanathe06@gmail.com
 	
 	Thank you
 	
