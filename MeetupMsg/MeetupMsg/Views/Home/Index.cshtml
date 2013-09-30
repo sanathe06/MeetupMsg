@@ -1,20 +1,72 @@
-﻿<div id="body">
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>Welcome to Meetup Updates Glassware Application </h1>
-            </hgroup>
-            <p>
-               This sample application demonstarte simple Glassware application that send notification to glass about Meetup Session ... ;-)
-            </p>
-        </div>
-    </section>
-    <section class="content-wrapper main-content clear-fix">
-        <h3>This is only for demonstration</h3>
-        <p>
-            You can subscribe this service registering here
-        </p>
-        <a href=@Url.Action("StartAuth", "Auth")>
-            <img src="~/Images/glass.jpg" alt=""/></a>
-    </section>
+﻿@{
+    Layout = null;
+}
+
+<style>
+    .hedderDiv {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 300px;
+        font: 100 2.150em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        text-align: center;
+        color: white;
+        background-color: #e51938;
+        display:;
+    }
+
+    .hedderDivText {
+        position: fixed;
+        top: 110px;
+        left: 100px;
+        right: 100px;
+        font: 100 2.750em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    .wellcomeMessageText {
+        position: fixed;
+        top: 170px;
+        left: 100px;
+        right: 100px;
+        font: 100 1.250em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .subscribeMessageText {
+        position: fixed;
+        top: 370px;
+        left: 100px;
+        right: 100px;
+        font: 100 1.750em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        color: black;
+        text-align: center;
+    }
+
+    .LoginUrlImage {
+        position: fixed;
+        top: 480px;
+        left: 100px;
+        right: 100px;
+        font: 100 1.750em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        color: black;
+        text-align: center;
+    }
+</style>
+<div class="hedderDiv"></div>
+<div class="hedderDivText">Welcome to Meetup Updates Glassware Application</div>
+<div class="wellcomeMessageText">This sample application demonstarte simple Glassware application that send notification to glass about Meetup Session ... ;-)</div>
+<div class="subscribeMessageText">
+    <strong>This is only for demonstration</strong>
+    <br />
+    You can subscribe this service registering here
 </div>
+
+<div class="LoginUrlImage">
+    <a href=@Url.Action("StartAuth", "Auth")>
+        <img src="~/Images/glass.jpg" alt="" /></a>
+</div>
+

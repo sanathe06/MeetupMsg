@@ -1,11 +1,112 @@
-﻿<br/>
-<h2>Welcome to Meetup Time Line Updates</h2>
-<br/>
+﻿@{
+    Layout = null;
+}
 
-<br/>
-<div >
-    <form action="@Url.Action("SendMsg","Meetup")" method="POST">
-        <textarea name="message">Hi all,you are welcome !</textarea>
-        <button type="submit" class="ui-button-text">Send Msg</button>
+<style>
+    .hedderDiv {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 300px;
+        font: 100 2.150em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        text-align: center;
+        color: white;
+        background-color: #e51938;
+        display:;
+    }
+
+    .hedderDivText {
+        position: fixed;
+        top: 110px;
+        left: 100px;
+        right: 100px;
+        font: 100 2.750em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    .wellcomeMessageText {
+        position: fixed;
+        top: 170px;
+        left: 100px;
+        right: 100px;
+        font: 100 1.250em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .subscribeMessageText {
+        position: fixed;
+        top: 350px;
+        left: 50%;
+        width: 600px;
+        margin-left: -300px;
+        font: 100 2.750em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        color: black;
+        text-align: center;
+    }
+
+
+
+        .subscribeMessageText textarea {
+            border: 1px solid #C0C0C0;
+            float: left;
+            font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, 'sans-serif !important';
+            font-size: 20px;
+            font-style: normal !important;
+            margin: 0;
+            vertical-align: top;
+            width: 600px;
+            height: 150px;
+            padding: 4px 3px 4px 3px;
+            color: #333333;
+        }
+
+        .subscribeMessageText button {
+            border: 0px solid #ffe985;
+            float: left;
+            font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, 'sans-serif !important';
+            font-size: 18px;
+            font-style: normal !important;
+            margin: 0;
+            vertical-align: top;
+            min-width: 80px;
+            padding: 5px 10px 5px 10px;
+            color: #FFFFFF;
+            background-color: #3b3b3b;
+            margin-right: 10px;
+        }
+        .subscribeMessageText button:hover {
+            background-color: #525252;
+        }
+</style>
+
+
+
+<div class="hedderDiv"></div>
+<div class="hedderDivText">Welcome to Meetup Updates Glassware Application</div>
+<div class="wellcomeMessageText">This sample application demonstarte simple Glassware application that send notification to glass about Meetup Session ... ;-)</div>
+<div class="subscribeMessageText">
+    <form action="@Url.Action("SendMsg", "Meetup")" method="POST">
+        <table>
+            <tr>
+                <td style="padding-bottom: 10px; font-size: 20px;">
+                    Please type the message
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="message">Hi all,you are welcome !</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="ui-button-text">Send Message</button>
+                </td>
+            </tr>
+        </table>
+
+
     </form>
 </div>
